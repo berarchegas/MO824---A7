@@ -62,6 +62,7 @@ int main() {
                 groupDemand += demand[x.second];
                 group.push_back(x.second);
             }
+            else break;
         }
         for (int x : group) cout << x << ' ';
         cout << '\n';

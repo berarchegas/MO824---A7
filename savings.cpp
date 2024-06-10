@@ -48,7 +48,7 @@ int main() {
             savings.push_back({dist(i, 0) + dist(0, j) - dist(i, j), i, j});
         }
     }
-    sort(savings.begin(), savings.end());
+    sort(savings.rbegin(), savings.rend());
     int ans = 0;
     for (int i = 1; i < n; i++) ans += 2 * dist(0, i);
     for (array<int, 3> x : savings) {
